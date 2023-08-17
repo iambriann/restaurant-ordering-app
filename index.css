@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+} 
+
+header, main {
+    width: 600px;
+}
+
+.menu-area {
+    flex-wrap: wrap;
+    padding: 10px;    
+}
+
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 2px gray solid;
+    padding: 10px;
+}
+
+.menu-desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.menu-emoji {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 90px;
+    font-size: 50px;
+}
+
+.food-details {
+    margin-left: 10px;
+}
+
+.add-btn {
+    align-self: center;
+}
+
+h3 {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.order-list {
+    width: 100%;
+    padding: 10px;
+}
+
+.order-item {
+    display: flex;    
+    justify-content: space-between;        
+}
+
+.order-desc {
+    display: flex;
+    gap: 10px; 
+}
+
