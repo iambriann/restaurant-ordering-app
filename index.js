@@ -1,6 +1,6 @@
 
 import { menuArray } from "./data.js"
-import addbtnimage from '../assets/addbtn.png'; 
+import addbtnimage from './images/addbtn.png'; 
 
 const map = new Map()
 
