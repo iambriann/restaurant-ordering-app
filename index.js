@@ -97,7 +97,7 @@ function getMenuHtml() {
                     <p>$${item.price}</p>
                 </div>
             </div>
-            <img class="add-btn" alt="Add button" data-add="${item.id}" src="images/add-btn.png"></img>
+            <img class="add-btn" alt="Add button" data-add="${item.id}" src="images/addbtn.png"></img>
         </div>
         `
         
