@@ -1,14 +1,30 @@
 body {
     margin: 0;
+    font-family: 'Smythe', cursive;
+    width: 600px;
 } 
 
 header, main {
-    width: 600px;
+    width: 100%;
+    margin: 0;
+}
+
+hr {
+    font-size: 3px;
+}
+
+
+.ingredients-desc {
+    font-size: small;
+    color: gray;
 }
 
 .menu-area {
+    position: relative;
+    box-sizing: border-box;
     flex-wrap: wrap;
-    padding: 10px;    
+    width: 100%;
+    padding: 20px;    
 }
 
 
@@ -17,7 +33,6 @@ header, main {
     justify-content: space-between;
     width: 100%;
     border-bottom: 2px gray solid;
-    padding: 10px;
 }
 
 .menu-desc {
@@ -43,14 +58,15 @@ header, main {
     align-self: center;
 }
 
+
 h3 {
     padding-top: 10px;
     text-align: center;
 }
 
-.order-list {
+.order {
     width: 100%;
-    padding: 10px;
+    text-align: center;
 }
 
 .order-item {
@@ -58,8 +74,75 @@ h3 {
     justify-content: space-between;        
 }
 
-.order-desc {
+.order-desc, .order-details {
     display: flex;
     gap: 10px; 
+}
+
+.remove-btn {
+    background: none;
+    border: none;
+    color: lightgray;
+    font-size: small;
+}
+
+.total-details {
+    display: flex;
+    justify-content: space-between;  
+}
+
+.complete-order-btn, .pay-btn, .cancel-btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background: #16DB99;
+    border: none;
+    color: white;    
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.cancel-btn {
+    background: lightgray;
+}
+
+.pay-btn, input, .cancel-btn {
+    width: 90%;
+
+}
+
+input {
+    margin: 10px;
+    height: 40px;
+}
+
+
+.add-btn:active, .complete-order-btn:active {
+    transform: scale(0.96)
+}
+
+.payment-popup {
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    border: 2px solid black;
+    width: 80%;
+    height: 80%;
+    background: white;
+}
+
+.thank-msg {
+    margin-top: 10px;
+    display: none;
+    background-color: #ECFDF5;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
 }
 
