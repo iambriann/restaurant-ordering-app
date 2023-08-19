@@ -1,6 +1,6 @@
 
 import { menuArray } from "./data.js"
-import imgUrl from 'images/addbtn.png'
+import addbtnimage from '../assets/addbtn.png'; 
 
 const map = new Map()
 
@@ -97,7 +97,7 @@ function getMenuHtml() {
                     <p>$${item.price}</p>
                 </div>
             </div>
-            <img class="add-btn" alt="Add button" data-add="${item.id}" src="${imgUrl}"></img>
+            <img class="add-btn" alt="Add button" data-add="${item.id}" src="${addbtnimage}"></img>
         </div>
         `
         
